@@ -5,6 +5,7 @@ from snippets import views
 urlpatterns = [
     # url(r'^snippets/$', views.SnippetList.as_view()),
     url(r'^snippets/$', views.jsonGetChlorosity),
+    url(r'^tide/$', views.jsonGetTide),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)
